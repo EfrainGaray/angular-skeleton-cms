@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SignupComponent } from "@login/signup";
+import { ForgotComponent } from "@login/forgot";
+import { SigninComponent } from "@login/signin";
+import { FooterComponent, HeaderComponent } from "@login/shared";
 
 import { LoginRoutingModule } from './login-routing.module';
-import { ForgotComponent } from './forgot/forgot.component';
-import { SignupComponent } from './signup/signup.component';
-import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
   declarations: [
     ForgotComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

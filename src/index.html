@@ -9,5 +9,21 @@
 </head>
 <body>
   <app-root></app-root>
+<script>
+
+
+
+  function setUpThemeToggle() {
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    const themeBtn = document.getElementById("themeToggle");
+    themeBtn.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark-theme");
+    });
+    if (prefersDarkScheme.matches) {
+      themeBtn.click()
+    }
+  }
+
+</script>
 </body>
 </html>

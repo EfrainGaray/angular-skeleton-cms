@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.shadow{
+  box-shadow: 0 4px 8px 0 variables.$shadow-black-1, 0 6px 20px 0 variables.$shadow-black-2;
+  .dark-theme & {
+    box-shadow: 0 4px 8px 0 variables.$shadow-white-1, 0 6px 20px 0 variables.$shadow-white-2
+  }
+}

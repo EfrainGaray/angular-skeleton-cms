@@ -6,6 +6,7 @@
     "paths" : {
       "@core/*" : ["src/app/core/*"],
       "@admin/*" : ["src/app/admin/*"],
+      "@login/*" : ["src/app/admin/login/*"],
       "@home/*" : ["src/app/core/*"],
       "@shared/*" : ["src/app/shared/*"],
     },

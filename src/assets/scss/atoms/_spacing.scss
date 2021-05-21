@@ -1,0 +1,9 @@
+@use '../settings/variables';
+
+
+.m-b-1{
+  margin-bottom: variables.$spacing-s;
+}
+.m-b-2{
+  margin-bottom: variables.$spacing-m;
+}
