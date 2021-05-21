@@ -1,5 +1,6 @@
 @use "../settings/variables";
 .btn{
+  cursor: pointer;
   flex-grow: 1;
   min-height: 2.5rem;
   border-radius: .2rem;

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 declare function  setUpThemeToggle() :any;
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,10 +14,12 @@ declare function  setUpThemeToggle() :any;
 
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
-    setUpThemeToggle()
+    setUpThemeToggle();
   }
 
 }
