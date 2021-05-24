@@ -1,46 +1,27 @@
-
+@use '~src/assets/scss/utilities/mixins';
 
 ::ng-deep {
   app-signin {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+    @include mixins.center();
+    min-height: 100%;
     flex-direction: column;
+    justify-content: space-between;
   }
 }
-app-header, app-footer{
-  display: flex;
+
+.info {
+  text-align: center;
+  flex-grow: 1;
+  max-width: mixins.toRem(550);
+  h1{
+    color: var(--brand-text-color);
+  }
 }
-
-main {
-  height: 100%;
-  section {
-    display: flex;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 0 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    >*{
-      margin: 5rem;
-    }
-    .info {
-      flex-basis: 0;
-      flex-grow: 999;
-      color: var(--text-color);
-      h1{
-        color: var(--brand-text-color);
-      }
-    }
-    figure{
-      flex-grow: 1;
-      flex-basis: 50rem;
-      max-width: 40rem;
-      img{
-        max-width: 60%
-      }
-
+.image{
+  figure{
+    text-align: center;
+    img{
+      width: 60%;
     }
   }
 }

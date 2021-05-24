@@ -1,0 +1,14 @@
+@use '~src/assets/scss/utilities/mixins';
+::ng-deep {
+  app-container {
+    max-width: mixins.toRem(1440);
+    display: flex;
+    width: 100%;
+  }
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}

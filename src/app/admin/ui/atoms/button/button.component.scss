@@ -1,0 +1,41 @@
+@use "~src/assets/scss/settings/variables";
+@use "~src/assets/scss/utilities/mixins";
+
+.btn {
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin: mixins.toRem(5) mixins.toRem(8);
+  min-height: mixins.toRem(40);
+  border-radius: mixins.toRem(5);
+  &--primary{
+    background: #{variables.$primary-color};
+    border: 0.06rem solid #{variables.$brand-text-color};
+    color: #{variables.$background-light-color};
+  }
+  &--secundary{
+    background: #{variables.$background-light-color};
+    border: 0.06rem solid #{variables.$primary-color};
+    color: #{variables.$primary-color};
+  }
+}
+::ng-deep {
+  app-button {
+    @include mixins.justify();
+    flex-grow: 1;
+    flex-basis: mixins.toRem(398);
+  }
+  :root {
+    &.dark-theme{
+      .btn {
+        &--primary {
+          background: #{variables.$primary-dark-color};
+          border: 0.06rem solid #{variables.$brand-text-inverted-color};
+        }
+        &.btn--secundary{
+          border: 0.06rem solid #{variables.$primary-dark-color};
+          color: #{variables.$primary-dark-color};
+        }
+      }
+    }
+  }
+}

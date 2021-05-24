@@ -1,0 +1,31 @@
+@use "~src/assets/scss/settings/variables";
+@use "~src/assets/scss/utilities/mixins";
+
+::ng-deep {
+  app-input {
+    @include mixins.justify();
+    flex-grow: 1;
+    flex-basis: mixins.toRem(233);
+  }
+}
+.input{
+  flex-grow: 1;
+  min-height: 3rem;
+  margin: mixins.toRem(8) mixins.toRem(8);
+  border: mixins.toRem(1) solid #{variables.$brand-text-color};
+  border-radius: mixins.toRem(5);
+  padding-left: mixins.toRem(16);
+  color: #{variables.$brand-text-color};
+  ::placeholder {
+    color: #{variables.$brand-text-color};
+    opacity: .5;
+  }
+  ::-ms-input-placeholder{
+    color: #{variables.$brand-text-color};
+    opacity: .5;
+  }
+  ::-ms-input-placeholder{
+    color: #{variables.$brand-text-color};
+    opacity: .5;
+  }
+}

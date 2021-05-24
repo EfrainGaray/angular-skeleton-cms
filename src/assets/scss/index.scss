@@ -12,18 +12,12 @@
 @use "elements/links";
 
 // Objects
+@use "objects/spacing";
 
-// Atoms
-@use "atoms/btn";
-@use "atoms/spacing";
-@use "atoms/input";
-@use "atoms/typography";
+
 
 // Molecules
 @use "molecules/switch";
-@use "molecules/form";
-
-// Organisms
 
 
 // Utilities

@@ -1,0 +1,6 @@
+.logo{
+  width: 4rem;
+  .dark-theme & {
+    filter: invert(1);
+  }
+}
