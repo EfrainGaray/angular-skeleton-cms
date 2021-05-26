@@ -1,0 +1,7 @@
+@use '~src/assets/scss/utilities/mixins';
+
+::ng-deep {
+  app-container-button {
+    display: flex;
+  }
+}

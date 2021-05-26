@@ -1,34 +1,27 @@
-
-<app-header  class="shadow"></app-header>
-<main>
-  <section>
+<app-header class="shadow"></app-header>
+<app-container>
     <div class="info">
-      <div class="content-center">
-        <div class="text-center m-b-2">
-          <h1>Ingresa Ahora</h1>
-          <p>“Bien hecho es mejor que bien dicho.” – Benjamin Franklin</p>
-        </div>
-      </div>
-      <div class="text-center">
-        <form class="form shadow">
-          <div>
-            <div class="content-center">
-              <input class="input" placeholder="Tu Email" />
-            </div>
-            <div class="content-center">
-              <input class="input" placeholder="Tu Password" />
-            </div>
-            <div class="content-center">
-              <button class="btn btn-primary">Ingresar</button>
-              <button class="btn btn-secundary">Registrate</button>
-            </div>
-          </div>
-        </form>
-      </div>
+      <app-container-call innerH1="Ingresa Ahora" innerP="“Bien hecho es mejor que bien dicho.” – Benjamin Franklin"></app-container-call>
+      <app-form class="shadow">
+        <app-container-input>
+          <app-input placeholder="Tu Email"></app-input>
+        </app-container-input>
+
+        <app-container-input>
+          <app-input  placeholder="Tu Password"></app-input>
+        </app-container-input>
+
+        <app-container-button>
+          <app-button type="button" inner="Inicio" classes="primary"></app-button>
+          <app-button type="button" inner="Registrate" classes="secundary" [routerLink]="['/admin/sign/up']"></app-button>
+        </app-container-button>
+
+      </app-form>
     </div>
-    <figure class="text-center">
-      <img src="assets/img/mobile-login@2x.png">
-    </figure>
-  </section>
-</main>
+    <div class="image">
+      <figure>
+        <img src="assets/img/mobile-login@2x.png">
+      </figure>
+    </div>
+</app-container>
 <app-footer class="shadow"></app-footer>

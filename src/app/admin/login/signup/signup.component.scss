@@ -1,27 +1,21 @@
 @use '~src/assets/scss/utilities/mixins';
 
 ::ng-deep {
-  app-signin {
+  app-signup {
     @include mixins.center();
     min-height: 100%;
     flex-direction: column;
     justify-content: space-between;
-  }
-}
-
-.info {
-  text-align: center;
-  flex-grow: 1;
-  max-width: mixins.toRem(550);
-  h1{
-    color: var(--brand-text-color);
-  }
-}
-.image{
-  figure{
-    text-align: center;
-    img{
-      width: 60%;
+    h1{
+      color: var(--brand-text-color);
     }
   }
+}
+.form {
+  flex-grow: 1;
+  max-width: mixins.toRem(550);
+}
+.info{
+  text-align: center;
+  max-width: 60ch;
 }

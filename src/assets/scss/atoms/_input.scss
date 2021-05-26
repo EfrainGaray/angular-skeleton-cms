@@ -3,28 +3,4 @@
 text-center{
   text-align: center;
 }
-.input{
-  flex-grow: 1;
-  min-height: 3rem;
-  margin: 1rem;
-  border: 0.06rem solid #{variables.$brand-text-color};
-  border-radius: .2rem;
-  padding-left: 1rem;
-  color: #{variables.$brand-text-color};
-  ::placeholder {
-    color: #{variables.$brand-text-color};
-    opacity: .5;
-  }
 
-
-  ::-ms-input-placeholder{
-    color: #{variables.$brand-text-color};
-    opacity: .5;
-  }
-
-
-  ::-ms-input-placeholder{
-    color: #{variables.$brand-text-color};
-    opacity: .5;
-  }
-}

@@ -19,7 +19,7 @@
     themeBtn.addEventListener("click", () => {
       document.documentElement.classList.toggle("dark-theme");
     });
-    if (prefersDarkScheme.matches) {
+    if (prefersDarkScheme.matches && !document.documentElement.classList.contains('dark-theme')) {
       themeBtn.click()
     }
   }

@@ -1,6 +1,7 @@
 @use "../settings/variables";
 
 :root {
+
   --background-color: #{variables.$background-lightest-color};
   --background-closer-color: #{variables.$background-light-color};
 

@@ -1,0 +1,16 @@
+@use '~src/assets/scss/utilities/mixins';
+
+::ng-deep {
+  app-form {
+    @include mixins.justify();
+    margin: auto mixins.toRem(16);
+
+  }
+}
+form{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: mixins.toRem(20);
+
+}

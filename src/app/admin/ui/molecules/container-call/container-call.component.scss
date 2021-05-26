@@ -1,0 +1,20 @@
+@use '~src/assets/scss/settings/variables';
+
+
+::ng-deep{
+  :root{
+    &.dark-theme {
+      h1{
+        color: #{variables.$brand-text-inverted-color};
+      }
+
+    }
+  }
+
+}
+h1 {
+  color: #{variables.$brand-text-color};
+}
+p{
+  color: var(--text-color);
+}

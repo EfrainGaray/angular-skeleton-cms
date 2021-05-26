@@ -1,0 +1,13 @@
+@mixin justify($vertical-align: center) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $vertical-align;
+  justify-content: space-between;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+

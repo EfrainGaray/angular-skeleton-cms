@@ -1,0 +1,8 @@
+@use '~src/assets/scss/utilities/mixins';
+
+::ng-deep {
+  app-container-input {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
